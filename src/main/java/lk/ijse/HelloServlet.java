@@ -10,6 +10,6 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("incoming request" +req.getRemoteAddr());
-        resp.getWriter().println("Hello ,Im from hello servlet");
+        resp.getWriter().println("<h1>Hello World</h1>");
     }
 }
